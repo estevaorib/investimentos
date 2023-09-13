@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada</title>
+</head>
+<body>
+    <header>
+        <h2>Desenvolvimento Web</h2>
+    </header>
+    <main>
+        <h1>Simulação</h1>
+        <form action="processar.php" method="get">
+            <fieldset>
+                <legend>Dados do investimento</legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required value="teste"><br>
+
+                <label for="aporte_inicial">Aporte Inicial</label>
+                <input type="number" name="valorInicial" id="valorInicial" required value="500"><br>
+
+                <label for="aporte_mensal">Aporte Mensal</label>
+                <input type="number" name="aporteMensal" id="aporteMensal" required value="250"><br>
+
+                <label for="nome">Rendimento</label>
+                <input type="number" name="rendimento" id="rendimento" required min="0.1" step="0.01" value="0.72"><br>
+                
+                <label for="periodo">Período</label>
+                <input type="number" name="periodo" id="periodo" required value="24"><br>
+
+                <input type="submit" name="simular" value="Simular">
+            </fieldset>
+        </form>    
+
+        <p><a href="index.html">Página Inicial</a></p>
+    </main>
+    <footer>
+        <p>&copy;2023 - Estevão Ribeiro</p>
+    </footer>
+</body>
+</html>
